@@ -1,0 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    background: #1e1a20;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+.section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    padding-left: 10%;
+    padding-right: 10%;   
+}
+
+section:nth-child(odd)
+{
+    justify-content: flex-end;
+}
+
+.section .content{
+    opacity: 0;
+}
+
+.section-0 .content{
+    opacity: 1;
+}
+
+.section h1, .section h2{
+    text-transform: uppercase;
+    margin-bottom:10px;
+    font-size: 5vw;
+}
+
+.section p{
+    font-size: 2vw;
+    display: block;
+}
+
+.section ul{
+    direction: rtl;
+    float: right;
+    font-size: 2vw;
+    padding-right: 15px;
+}
+
+.section ul li{
+    margin-bottom: 10px;
+}
+
+.section ul li:last-child{
+    margin-bottom: 0;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons a{
+    margin-right:20px
+}
+
+.icons img{
+    width:50px;
+}
+
+@media (max-width: 1000px) {
+    .section h1, .section h2{
+        font-size: 6vw;
+    }
+    
+    .section p{
+        font-size: 3vw;
+    }
+    
+    .section ul{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section h1, .section h2{
+        font-size: 7vw;
+    }
+    
+    .section p{
+        font-size: 4vw;
+    }
+    
+    .section ul{
+        font-size: 4vw;
+    }
+}
